@@ -10,7 +10,7 @@ body{
 .container{
     display: grid;
     place-items: center;
-    height: 600px;
+    height: 720px;
 }
 
 .card{
