@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  hsl(30, 38%, 92%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 500px;
+    height: 360px;
+    border-radius: 10px;
+    margin-top: 80px;
+    background-color: white;
+    display: flex;
+}
+
+.image{
+    height: auto;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    content: url('./images/image-product-desktop.jpg');
+}
+
+.content{
+    padding: 30px 25px;
+}
+
+#perfume{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#gab{
+    color: hsl(212, 21%, 14%);
+    font-family: Fraunces, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+
+#desc{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#amt{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+#off{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration:line-through;
+}
+
+button{
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: hsl(158, 36%, 22%);
+}
+
+@media screen and (max-width:700px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 40px 10px;
+    }
+    .image{
+        content: url('./images/image-product-mobile.jpg');
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    button{
+        width: 100%;
+    }
+}
