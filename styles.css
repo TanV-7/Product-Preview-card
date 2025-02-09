@@ -8,15 +8,16 @@ body{
 }
 
 .container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    height: 600px;
 }
 
 .card{
     width: 500px;
     height: 360px;
     border-radius: 10px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
     background-color: white;
     display: flex;
 }
